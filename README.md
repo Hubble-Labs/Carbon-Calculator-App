@@ -1,6 +1,10 @@
 # Carbon-Calculator-App
 Open-source carbon calculator web application for businesses and individuals.
 
+We will also be using:
+- https://github.com/NMF-earth/carbon-footprint
+- https://github.com/NMF-earth/nmf-app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
