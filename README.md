@@ -6,12 +6,20 @@ We will also be using:
 - https://github.com/NMF-earth/nmf-app
 
 ### Env:
+We use `node` as the runtime, `npm` is its package manager and `nvm` is a node version manager. Install `node` and `npm` using nvm. We will be using LTS software only. Install npm `node install npm` and nvm with `node install nvm`.
+
+#### Required Packages:
 - `node 16.16.0`
 - `npm 8.11.0`
 - `nvm 0.37.2`
 
+#### Instructions:
+- Go to https://nodejs.org/en/ and install node v16.16.0 LTS.
+- Run `node -v` to confirm you have the right version.
+- Run `npm -v` to confirm it also has the npm package.
+- Run `npm install nvm`.
+- If you followed these instructions correctly you shouldn't need to use nvm unless you already have another version of node installed.
 
-We use `node` as the runtime, `npm` is its package manager and `nvm` is a node version manager. You can install node from https://nodejs.org/en/. We will be using LTS software only. Install npm `node install npm` and nvm with `node install nvm`.
 
 ## Getting Started with Create React App
 
