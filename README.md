@@ -5,6 +5,12 @@ We will also be using:
 - https://github.com/NMF-earth/carbon-footprint
 - https://github.com/NMF-earth/nmf-app
 
+### Env:
+- `node 16.16.0`
+- `npm 8.11.0`
+- `nvm 0.37.2`
+We use `node` as the runtime, `npm` is its package manager and `nvm` is a node version manager. You can install node from https://nodejs.org/en/. We will be using LTS software only. Install npm `node install npm` and nvm with `node install nvm`.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
