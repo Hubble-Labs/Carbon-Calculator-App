@@ -4,7 +4,7 @@ const controller = {
     res.status(200).send('get')
   },
   post: (req, res) => {
-    res.status(200).send('post');
+    res.status(200).send(req.body.data);
   }
 }
 
