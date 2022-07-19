@@ -12,8 +12,12 @@ class App extends React.Component {
   render () {
       return(
         <div container mx-auto >
-            <Header />
-            <h1>Calculate the Carbon footprint of...</h1>
+            <div class="flex flex-row w-full justify-center">
+              <Header />
+                <div class='w-5/6'>
+                  <h1>Calculate the Carbon footprint of...</h1>
+                </div>
+            </div>
         </div>
     )
   }
