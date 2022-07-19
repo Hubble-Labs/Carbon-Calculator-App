@@ -6,6 +6,14 @@ const mediumHaulFlight = 0.000286;
 const longHaulFlight = 0.000239;
 const plane = (shortHaulFlight + mediumHaulFlight + longHaulFlight) / 3;
 
+//internet data
+const toJoules = (x) => x * 3.6 * Math.pow(10, 6);
+/* 0.007 & 0.058 in kWh/GB - divide by 8 to get bits */
+const FactorDataCenter = toJoules(0.007 * Math.pow(10, -9)) / 8;
+const FactorNetwork = toJoules(0.058 * Math.pow(10, -9)) / 8;
+/* 0.055 in kWh/hr */
+const FactorDevice = toJoules(0.055 / (60 * 60));
+
 //Transportation Unit: kgCO2eq/m
 totalCarbon += inputData.bus * 0.000103;
 totalCarbon += inputData.hybridCar * 0.00018;
@@ -35,6 +43,12 @@ totalCarbon += inputData.coat * (89 + 39 + 25) / 3;
 totalCarbon += inputData.dress * (56 + 56 + 51) / 3;
 
 //Internet Use
+const GHGdataCenter = inputData.dataWeight * FactorDataCenter * electricity.world;
+const GHGnetwork = inputData.dataWeight * FactorNetwork * electricity.world;
+const GHGdevice = inputData.internetSeconds * FactorDevice * electricity[inputData.country];
+/* kgCO₂eq */
+totalCarbon += GHGdataCenter + GHGnetwork + GHGdevice;
+
 
 
 module.exports = totalCarbon;
