@@ -3,16 +3,16 @@ import React from 'react';
 import axios from 'axios';
 
 class App extends React.Component {
-  constructor() {
-    super();
+    constructor() {
+        super();
 
   }
 
   render () {
-    return(
-    <div>
-      heyyy yooo
-    </div>
+      return(
+          <div container mx-auto >
+          <h1>Calculate the Carbon footprint of...</h1>
+        </div>
     )
   }
 }
