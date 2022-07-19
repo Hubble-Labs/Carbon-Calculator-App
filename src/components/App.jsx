@@ -4,20 +4,43 @@ import React, { useState } from 'react';
 import Header from './Header'
 import Footer from './Footer'
 import Homepage from './Homepage';
-import Typeform from './Typeform';
+import { Container, Col, Row, Navbar, Nav, Stack, Button } from 'react-bootstrap';
 
 function App() {
     const [count, setCount] = useState(0);
 
     return(
-        <div class="h-screen">
-            <Header />
-            <div class="flex flex-row w-full justify-center h-full">
-                <div class='flex flex-row w-5/6 h-full justify-center items-center '>
-                    <h1>Calculate the Carbon footprint of...</h1>
-                </div>
-            </div>
-        </div>
+        <Container>
+            <Row>
+                <Navbar>
+                    <Container>
+                        <Navbar.Brand href="">Hubble Labs Carbon Calculator</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                          <Nav className="me-auto">
+                            <Nav.Link href="#home">Calculate</Nav.Link>
+                            <Nav.Link href="#faq">FAQ</Nav.Link>
+                            <Nav.Link href="#credits">Credits</Nav.Link>
+                          </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>    
+            </Row>
+            <Row>
+                <Col>
+                    <h1 >Calculate the Carbon footprint of...</h1>
+                    <Stack gap={4} direction="horizontal" className="align-items-center justify-content-center">
+                        <Button>
+                            Individual
+                        </Button>
+                        <Button>
+                            Business
+                        </Button>
+                    </Stack>
+                    
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
