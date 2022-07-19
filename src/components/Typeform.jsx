@@ -10,7 +10,7 @@ class Typeform extends React.Component {
 
   render() {
         return (
-            <Widget id="yzm4odIh" style={{ width: '50%'}} className="my-form" />
+            <Widget id="yzm4odIh" style={{ width: '75%'}} className="my-form" />
         )
     }
 }

@@ -2,20 +2,22 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import Header from './Header'
+import Footer from './Footer'
+import Homepage from './Homepage';
 import Typeform from './Typeform';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return(
-    <div container mx-auto >
+    <div class="h-screen">
       <Header />
-      <div class="flex flex-row w-full justify-center h-screen">
-        <div class='w-5/6 justify-center'>
+      <div class="flex flex-row w-full justify-center h-full">
+        <div class='flex flex-row w-5/6 h-full justify-center items-center '>
           <h1>Calculate the Carbon footprint of...</h1>
         </div>
       </div>
-      <Typeform />
+      
     </div>
   )
 }
