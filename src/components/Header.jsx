@@ -11,8 +11,8 @@ class Header extends React.Component {
 
   render() {
         return (
-            <div container mx-auto>
-                <h1>
+            <div class="flex h-16 w-full items-center">
+                <h1 class="h-8 w-1/3">
                     Hubble Labs Carbon Calculator
                 </h1>
             </div>

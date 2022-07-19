@@ -10,9 +10,11 @@ function App() {
     <div container mx-auto >
       <div class="flex flex-row w-full justify-center">
         <Header />
-          <div class='w-5/6'>
-            <h1>Calculate the Carbon footprint of...</h1>
-          </div>
+      </div>
+      <div class="flex flex-row w-full justify-center h-screen">
+        <div class='w-5/6'>
+          <h1>Calculate the Carbon footprint of...</h1>
+        </div>
       </div>
     </div>
   )
