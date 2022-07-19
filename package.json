@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "carbon-calculator-app",
   "version": "0.1.0",
   "private": true,
@@ -35,7 +34,7 @@
     "eject": "react-scripts eject",
     "start2": "nodemon server/index.js",
     "build-vite": "vite build",
-    "dev": "vite serve"
+    "dev": "vite serve --host"
   },
   "eslintConfig": {
     "extends": [
