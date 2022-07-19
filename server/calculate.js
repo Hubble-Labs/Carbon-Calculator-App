@@ -27,7 +27,7 @@ totalCarbon += inputData.tablet * 87;
 totalCarbon += inputData.desktop * 588;
 
 //  clothing Unit: kgCO2eq per product 
-totalCarbon += inputData.shoes 
+totalCarbon += inputData.shoes * (15 + 19 + 20) / 3;
 totalCarbon += inputData.shirts * (13 + 12) / 2;
 totalCarbon += inputData.jeans * 25;
 totalCarbon += inputData.sweater * (28 + 26 + 31 + 56 + 12) / 5;
