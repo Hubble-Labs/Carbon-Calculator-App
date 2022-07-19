@@ -1,5 +1,4 @@
 //sample typeform
-
 import { Widget } from '@typeform/embed-react'
 import React from 'react';
 

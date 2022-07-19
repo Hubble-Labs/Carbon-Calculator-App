@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import Header from './Header'
-import Typeform from './typeform';
+import Typeform from './Typeform';
 
 function App() {
   const [count, setCount] = useState(0);
