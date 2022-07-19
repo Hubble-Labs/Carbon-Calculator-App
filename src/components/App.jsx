@@ -9,11 +9,9 @@ function App() {
 
   return(
     <div container mx-auto >
-      <div class="flex flex-row w-full justify-center">
-        <Header />
-      </div>
+      <Header />
       <div class="flex flex-row w-full justify-center h-screen">
-        <div class='w-5/6'>
+        <div class='w-5/6 justify-center'>
           <h1>Calculate the Carbon footprint of...</h1>
         </div>
       </div>
