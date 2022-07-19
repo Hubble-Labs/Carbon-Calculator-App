@@ -10,8 +10,8 @@ class App extends React.Component {
 
   render () {
       return(
-          <div container mx-auto >
-          <h1>Calculate the Carbon footprint of...</h1>
+        <div container mx-auto >
+            <h1>Calculate the Carbon footprint of...</h1>
         </div>
     )
   }
