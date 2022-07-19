@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import Header from './Header'
+import Typeform from './typeform';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
             <h1>Calculate the Carbon footprint of...</h1>
           </div>
       </div>
+      <Typeform />
     </div>
   )
 }
