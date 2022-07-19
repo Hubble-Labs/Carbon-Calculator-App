@@ -1,6 +1,7 @@
 //This file will be the root of our application
 import React from 'react';
-import axios from 'axios';
+// eslint-disable-next-line
+//import axios from 'axios';
 
 class Header extends React.Component {
     constructor() {

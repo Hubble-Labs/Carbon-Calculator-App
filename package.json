@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "carbon-calculator-app",
   "version": "0.1.0",
   "private": true,
@@ -32,7 +33,9 @@
     "build2": "webpack -d --watch",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start2": "nodemon server/index.js"
+    "start2": "nodemon server/index.js",
+    "build-vite": "vite build",
+    "dev": "vite serve"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +56,10 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^2.0.0",
     "tailwindcss": "^3.1.6",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vite": "^3.0.2",
+    "vite-plugin-html": "^3.2.0"
   }
 }
