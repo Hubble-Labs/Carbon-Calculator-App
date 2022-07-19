@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Header from './Header'
 import Footer from './Footer'
 import Homepage from './Homepage';
-import Typeform from './Typeform';
 import { Container, Col, Row, Navbar, Nav, Stack, Button } from 'react-bootstrap';
 
 function App() {
