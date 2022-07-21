@@ -27,28 +27,28 @@ class Form extends React.Component {
     render() {
         if (this.state.category == 'home') {
             return (
-
+                <div></div>
             );
         }
         else if (this.state.category == 'transportation') {
             return (
-
+                <div></div>
         );
         } else if (this.state.category == 'food') {
             return (
-
+                <div></div>
         );
         } else if (this.state.category == 'electronics') {
             return (
-
+                <div></div>
         );
         } else if (this.state.category == 'internet') {
             return (
-
+                <div></div>
         );
         } else {
             return (
-
+                <div></div>
         );
         }
     }
