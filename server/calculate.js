@@ -1,5 +1,7 @@
 var totalCarbon = 0;
 
+
+
 //flight data
 const shortHaulFlight = 0.00034;
 const mediumHaulFlight = 0.000286;
@@ -43,8 +45,8 @@ totalCarbon += inputData.coat * (89 + 39 + 25) / 3;
 totalCarbon += inputData.dress * (56 + 56 + 51) / 3;
 
 //Internet Use
-const GHGdataCenter = inputData.dataWeight * FactorDataCenter * electricity.world;
-const GHGnetwork = inputData.dataWeight * FactorNetwork * electricity.world;
+const GHGdataCenter = inputData.dataWeight * FactorDataCenter * (0.519 / 3.6) * Math.pow(10, -6);//electricity.world
+const GHGnetwork = inputData.dataWeight * FactorNetwork * (0.519 / 3.6) * Math.pow(10, -6);//electricity.world
 const GHGdevice = inputData.internetSeconds * FactorDevice * electricity[inputData.country];
 /* kgCO₂eq */
 totalCarbon += GHGdataCenter + GHGnetwork + GHGdevice;
